@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: visionprank-app
+    env: python
+    region: oregon  # 또는 다른 지역
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app  # gunicorn으로 Flask 애플리케이션 실행
+    envVars:
+      - key: DATABASE_URL
+        value: mysql://your_username:your_password@your_hostname:3306/your_database
+    plan: free  # 무료 플랜을 사용
