@@ -219,10 +219,10 @@
                             <td>{{ row['방문자리뷰'] }}</td>
                             <td>{{ row['최신일자'] }}</td>
                             <td>
-                                <button class="btn btn-primary" data-id="{{ row['id'] }}" data-keyword="{{ row['키워드'] }}" data-place-id="{{ row['플레이스번호'] }}" data-place-name="{{ row['상호명'] }}" onclick="fetchData(this)">조회</button>
+                                <button class="btn btn-primary" data-id="{{ row['ID'] }}" data-keyword="{{ row['키워드'] }}" data-place-id="{{ row['플레이스번호'] }}" data-place-name="{{ row['상호명'] }}" onclick="fetchData(this)">조회</button>
                             </td>
                             <td>
-                                <button class="btn btn-danger" data-id="{{ row['id'] }}" onclick="deleteKeyword(this)">삭제</button>
+                                <button class="btn btn-danger" data-id="{{ row['ID'] }}" onclick="deleteKeyword(this)">삭제</button>
                             </td>
                         </tr>
                         {% endfor %}
