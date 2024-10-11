@@ -1243,4 +1243,4 @@ def delete_keyword():
 
 if __name__ == '__main__':
     test_db_connection()  # MySQL 연결 확인
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
